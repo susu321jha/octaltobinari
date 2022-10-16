@@ -17,7 +17,24 @@ public class CodesCracker
          char ch = octal.charAt(i);
          switch(ch)
          {
-            //help to create logic
+            case '0': binary = binary + "000";
+               break;
+            case '1': binary = binary + "001";
+               break;
+            case '2': binary = binary + "010";
+               break;
+            case '3': binary = binary + "011";
+               break;
+            case '4': binary = binary + "100";
+               break;
+            case '5': binary = binary + "101";
+               break;
+            case '6': binary = binary + "110";
+               break;
+            case '7': binary = binary + "111";
+               break;
+            default: System.out.println("\nInvalid Octal Digit!");
+               return;
          }
       }
       
